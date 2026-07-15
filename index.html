@@ -3,75 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday, Samiha! 💖</title>
+<title>Happy Birthday, Samiha 💖</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,sans-serif;
-background:linear-gradient(-45deg,#ffd6ec,#d9e8ff,#ffe6f2,#d6f0ff);
-background-size:400% 400%;
-animation:gradient 12s ease infinite;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:20px;
-}
-
-@keyframes gradient{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-.card{
-max-width:850px;
-width:100%;
-background:rgba(255,255,255,.9);
-padding:35px;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.2);
-line-height:2;
-font-size:20px;
-white-space:pre-line;
-}
-
-h1{
-text-align:center;
-color:#ff4f8b;
-margin-bottom:25px;
-}
-
-button{
-display:block;
-margin:30px auto 0;
-padding:14px 28px;
-font-size:18px;
-border:none;
-border-radius:50px;
-background:#ff5f9e;
-color:white;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-transform:scale(1.05);
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+
 <div class="card">
 
-<h1>🎂 Happy Birthday, Samiha! 🎂</h1>
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2>Samiha The Shaitan 😈</h2>
+
+<p>Someone has prepared a little surprise just for you... 💖</p>
+
+<div class="gift">🎁</div>
+
+<button onclick="showPage('page2')">
+Open Your Gift 🎀
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+
+<div class="message-box">
+
+<h1>💌 A Message For You</h1>
+
+<p>
 
 💖 Assalamualaikum, Samiha! 😈✨
 
@@ -97,4 +64,68 @@ Thank you for being such an amazing friend(hamesha rehna agar hate na then see �
 
 Chahe hum kitne bhi door kyun na ho..i will always rememberQ=I×T with u 😁, you'll always be one of my favorite people. 💕
 
-Have the most amazing birthday ever
+Have the most amazing birthday ever! Enjoy your special day, eat lots of cake 🍰, make unforgettable memories 📸, and never stop being the wonderful (and slightly dangerous 😈) Shaitan that you are.
+
+Once again... Happy Birthday, Samiha! 🩷💙🎂✨
+
+</p>
+
+<button onclick="showPage('page3')">
+Continue ➜
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+
+<h1>🌸 Our Memory Wall 🌸</h1>
+
+<div class="gallery">
+
+<div class="photo"><img src="1.jpg"></div>
+<div class="photo"><img src="2.jpg"></div>
+<div class="photo"><img src="3.jpg"></div>
+<div class="photo"><img src="4.jpg"></div>
+<div class="photo"><img src="5.jpg"></div>
+<div class="photo"><img src="6.jpg"></div>
+
+</div>
+
+<button onclick="showPage('page4')">
+Final Surprise 💖
+</button>
+
+</div>
+
+<!-- PAGE 4 -->
+<div id="page4" class="page">
+
+<div class="card">
+
+<h1>💖 Happy Birthday Once Again! 💖</h1>
+
+<h2>Q = I × T Forever ♾️</h2>
+
+<p>
+No matter where life takes us,
+I'll always remember these memories.
+
+Stay the same wonderful,
+crazy Shaitan. 😈
+
+May Allah bless you always. 🤲
+
+Happy Birthday! 🎂
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
